@@ -1,0 +1,635 @@
+@font-face{
+    font-family:'Axettac Demo', 'Viga', sans-serif;
+    src: url('../font/Axettac\ Demo.ttf');
+    src: url('../font/Viga-Regular.ttf');
+}
+.hum-img{
+    margin-top: -3px;
+    width: 20px;
+    height:20px;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: white;
+}
+title link{
+    width: 10px;
+    height: 10px;
+}
+/* Navbar */
+.navbar{
+    position:relative;
+    z-index: 1;
+}
+
+.navbar-brand{
+    font-family: 'Axettac Demo', sans-serif;
+    font-size: 22px;
+}
+.navbar-brand, .nav-link{
+    color: white !important;
+}
+.navbar-light{
+    background: #394201 !important;
+}
+
+/*---------------Tentang mobile ver------------------------------------- */
+.tombol-tentang{
+    width: 60% !important;
+    height: 60px !important;
+    color: green !important;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid green;
+}
+.tombol-tentang:hover{
+    color: white !important;
+    background: green !important;
+    border-radius: 8px;
+    border: 2px solid green;
+}
+
+.button-center{
+    padding-top: 1px;
+    border-radius: 6px !important;
+    width: 300px;
+    height: 40px;
+}
+
+.title{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center; 
+}
+
+.title-2{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-align-justify{
+    text-align: justify;
+}
+
+.justify-content-center{
+    text-align: center;
+    box-align: center;
+}
+.border-bottom{
+    border-bottom: 2px solid #394201 !important;
+}
+/*--------------- AKHIR TENTANG - MOBILE --------------- */
+
+/*--------------- MITRA PROFILE - MOBILE VER -----------------*/
+.img-profil-box{
+    width: 20%;
+}
+.profil{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.nm{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 10px;
+}
+
+.nm-2{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0 0 2px 10px;
+}
+.nm-3{
+    font-family: sans-serif;
+    font-size: 10px;
+    margin: 0 0 2px 10px;
+}
+.morethan{
+    margin: 25px 30px;
+    width: 15px;
+    height: 30px; 
+}
+.member-row{
+    display: inline block;
+    margin: 2px;
+    width: 400px;
+    height: 80px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) !important;
+    margin-top: 10px;
+}
+.description{
+    width: 60%;
+}
+.show{
+    width: 20%;
+}
+/*---------------- AKHIR MITRA - MOBILE VER ------------------*/
+
+/* Tab Rekomendasi */
+.tab-rekomendasi{
+    padding-top: 10px;
+    background-color: rgb(112, 124, 54);
+    box-shadow: rgba(0, 0, 0, 0.2) 2.5px 2.5px 5px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-bottom: 1px;
+    margin-top: unset;
+}
+.tombol{
+    background: green;
+    border-radius: 40px;
+    border: green;
+}
+.tombol:hover{
+    background-color: white;
+    border: 0.1px solid green;
+    color: green;
+}
+
+.search{
+    width: 200px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 18px;
+    padding: 3px;
+}
+
+
+/* Isi Konten */
+.col-lg{
+    border-radius: 8px;
+}
+
+/* Desc */
+.display-desc{
+    font-size: 20px;
+
+}
+
+.display-desc{
+    font-weight: 200;
+}
+.display-desc .span{
+    font-weight: 500;
+}
+/* Jumbotron */
+.jumbotron{
+    background-image: url(../image/gambarbanner.png);
+    background-size: cover;
+    height: 340px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+
+
+.jumbotron .display-4{
+    margin-right: 10px;
+    color: white;
+    margin-top: 90px;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron .display-5{
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+/* Content */
+.col-lg{
+    margin: 5px 15px;
+    width: 160px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.img{
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    height: 145px;
+}
+.nm-prod{
+    color: black;
+}
+.nm-prod, .nm-wr, .zona{
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.price{
+    color: red;
+    font-size: 20px;
+}
+
+.zona{
+    color: green;
+}
+
+/* Deskripsi */
+.display-desc{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+    width: 335px;
+    margin-bottom: 10px;
+    min-height: 100px;
+}
+.kiri{
+    margin-left: 1px;
+    margin-right: 0px;
+}
+.kanan{
+    margin-right: 0px
+}
+.text{
+    margin-top: 5px;
+}
+
+/* Footer */
+ul{
+    list-style-type: none;
+    padding-left: 1px;
+}
+.page-footer{
+    background: white;
+    border-top: 2px solid black;
+}
+.footer-copyright{
+    padding-top: 15px;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #394201;
+}
+.h5, h5{
+    font-size: 15px;;
+}
+.sosmed-logo{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+.fb-right{
+    margin-top: -59px;
+    margin-left: 50px;
+}
+.nav-lg{
+    padding-left: 166px;
+    margin-bottom: 15px;
+}
+.wa{
+    color: white;
+    background: #26d367;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.wa:hover{
+    text-decoration: none;
+    color: white;
+}
+.con-text{
+    margin-bottom: 10px;
+}
+.text-h5{
+    padding-left: 5px;
+}
+.tab{
+    padding-top: 0px;
+    margin-top: 10px;
+    background: white !important;
+}
+
+.text-rekomendasi{
+    font-weight: 500;
+}
+
+/* Iphone 5 */
+@media (min-width: 320px){
+    .col-lg{
+        margin: 5px 10px;
+        width: 140px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    .nm-prod{
+        font-size: 15px;
+    }
+    .price{
+        font-size: 18px;
+    }
+    .img{
+        margin: -3px;
+        padding: 5px;
+        width: 120px;
+        height: 145px;
+}
+
+@media (min-width: 1024px){
+    .footer-copyright{
+        margin-top: 70px;
+    }
+    .nav-lg{
+        margin-top:5px;
+        
+    }
+    .con-text{
+        margin-bottom: 30px;
+    }
+}
+/* DEKSTOP VERSION */
+
+@media (min-width: 992px){
+    .navbar-brand{
+        font-size: 52px;
+    }
+    .navbar-brand, .nav-link{
+        margin-top: 1px;
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link{
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .tombol{
+        padding-top: 7px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #088f0d; 
+        width: 50%;
+        margin: auto; 
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron{
+        margin-top: -110px;
+        height: 640px;
+    }
+    .jumbotron .display-4, .jumbotron .display-5{
+        margin-top: 20px;
+    }
+    .jumbotron .display-4{
+        margin-top: 160px;
+        font-size: 46px;
+    }
+    .jumbotron .display-5{
+        font-size: 32px;
+    }
+
+    .cari{
+        background: green;
+        color: white;
+        border: 2px solid green;
+        border-radius: 40px;
+        margin-top: 4px;
+        padding: 7px 20px 10px 20px;
+        font-size: 21px;
+    }
+    .cari:hover{
+        background: green;
+        border: 2px solid white;
+        color: white;
+        text-decoration: unset;
+    }
+    .search{
+        font-size: 22px;
+        width: 600px;
+        padding: 12px;
+    }
+    .container{
+        padding-right: 30px;
+        padding-left: 11px;
+    }
+    .tab-rekomendasi{
+        padding-top: 10px;
+        background-color: rgb(112, 124, 54);
+        box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-bottom: 20px;
+        padding: 10px 0 10px 20%;
+        margin-top: unset;
+    }
+    
+/* Content */
+
+    .row .justify-content-center{
+        display: inline-flex;
+        margin-right: 10px;
+    }
+    .row{
+        margin: 5px;
+    }
+    .col-lg{
+        margin: 15px;
+        width: 250px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2)
+    }
+    .img{
+        margin: 5px 20px 5px 22px;
+        padding: 10px;
+        width: 180px;
+        height: 220px;
+    }
+    .img:hover{
+        margin-top: 0px;
+        /* height: 230px;
+        width: 190px; */
+        margin-bottom: 10px;
+    }
+    .nm-prod{
+        margin-top: -5px;
+    }
+
+    .nm-prod, .price{
+        text-align:center; 
+        margin-bottom: 2px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .price{
+        color: red;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .zona{
+        color: green;
+    }
+    
+/* Deskripsi */
+    .display-desc{
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        font-size: 22px;
+        text-align: center;
+        width: 1055px;
+    }
+    .text{
+        font-size: 22px;
+    }
+    .kiri{
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+    .kanan{
+        margin-right: 0px
+    }
+    .text{
+        margin-top: 5px;
+    }
+
+/* Footer */
+#footer{
+    position: relative;
+    padding-top: 5px;
+    margin-top: 60px;
+    background-color: #707c36;
+    float: right; 
+    width: 100%;
+}
+
+.footer-text{
+    padding-left: 80%;
+    text-align-last: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.sosmed{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color:#394201;
+}
+.sosmed > div {
+    color: white;
+    font-family: 'Ubuntu Light';
+}
+
+.footer-text{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.sosmed .container-footer {
+    position: relative;
+    min-width: 992px;
+    margin: 0 auto;
+}
+
+.sosmed-logo{
+    list-style: none;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 45px;
+    width: 45px;
+    height: 45px;
+    top: -2px;
+  }
+
+.fb-right {
+    margin-top: 46px;
+    margin-left: 60px;
+    height: 42px;
+    width: 42px;
+  }
+
+.sosmed ul {
+    margin-right: 300px;
+    position: relative;
+    float: right;
+    display: inline-block;
+}
+.sosmed ul li {
+     display: inline-block;
+     list-style: none;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+
+.sosmed ul li h3 {
+     padding-left: 0;
+ }
+ .wa{
+     font-size: 22px;
+     margin-left: 0px;
+ }
+
+/* --------------------------About ver dekstop------------------------------ */
+.title{
+    margin: 20px auto;
+    margin-bottom: -2px;
+    font-size: 32px;
+    width: 100%;
+}
+.title-2{
+    font-size: 22px;
+}
+
+.font-size-medium{
+    font-size: 22px;
+}
+/* --------------------------akhir about-------------------------------- */
+
+/*-------------------------List-Member---------------------------- */
+
+
+.morethan{
+    margin: 33px 51px;
+    width: 15px;
+    height: 30px;
+}
+.member-row{
+    margin: 10px auto;
+    width: 60%;
+    height: 100px;
+}
+.profil{
+    height: 85px;
+    width: 85px;
+    margin: 7px 28px;
+}
+
+/*------------------------------Akhir-list Member--------------------- */
+
+}
