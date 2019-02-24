@@ -1,2 +1,2 @@
 # toko-petani
-ini adalh frontend Tokopetani
+Ini adalah front-end Tokopetani, silahkan di download dan lanjutkan untuk membuat back-end
