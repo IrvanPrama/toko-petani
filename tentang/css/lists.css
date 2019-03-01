@@ -72,9 +72,8 @@ title link{
 .text-white{
     color: white;
 }
-
 .text-align-justify{
-    text-align: justify;
+    text-align: justify !important;
 }
 
 .justify-content-center{
@@ -87,14 +86,6 @@ title link{
 /*--------------- AKHIR TENTANG - MOBILE --------------- */
 
 /*--------------- MITRA PROFILE - MOBILE VER -----------------*/
-.img-profil-box{
-    width: 20%;
-}
-.profil{
-    margin: 5px;
-    width: 70px;
-    height: 70px;
-}
 
 .nm{
     font-family: sans-serif;
@@ -113,17 +104,24 @@ title link{
     margin: 0 0 2px 10px;
 }
 .morethan{
-    margin: 25px 30px;
+    margin: 25px 20px;
     width: 15px;
     height: 30px; 
 }
 .member-row{
     display: inline block;
     margin: 2px;
-    width: 400px;
     height: 80px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2) !important;
     margin-top: 10px;
+}
+.img-profil-box{
+    width: 20%;
+}
+.profil{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
 }
 .description{
     width: 60%;
@@ -133,6 +131,86 @@ title link{
 }
 /*---------------- AKHIR MITRA - MOBILE VER ------------------*/
 
+/* Info Panel */
+    .tab{
+        margin-top: 10px;
+    }
+/* Akhir Info Pznel */
+/* Content mobile ver*/
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.col-lg{
+    border-radius: 8px;
+}
+.nm-prod{
+    margin-top: -5px;
+    font-weight: 500;
+    height: 45px;
+}
+.nm-prod, .price{
+    text-align:center; 
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: black;
+}
+    
+.price{
+    font-weight: 200;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+    
+.col-lg{
+    margin: 5px 15px;
+    width: 150px;
+    height: 240px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.img{
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    height: 145px;
+}
+    
+.nm-wr, .zona{
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-weight: 500;
+}
+    
+.zona{
+    color: green;
+}
+text{
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+}
+.desc{
+    text-align: center;
+}
+.display-desc{
+    font-size: 22px;
+    width: 430px;
+    font-weight: 200;
+    padding: 10px;
+}
+    
+.display-desc .span{
+    font-weight: 500;
+}
+.text p{
+    text-align: justify;
+    }
+/* Akhir Content mobile ver */
 /* Tab Rekomendasi */
 .tab-rekomendasi{
     padding-top: 10px;
@@ -165,6 +243,18 @@ title link{
 
 
 /* Isi Konten */
+.tab{
+    min-width: 320px;
+}
+.addres{
+    background-color: rgb(112, 124, 54);
+    box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 38px;
+    padding: 5px;
+}
 .col-lg{
     border-radius: 8px;
 }
@@ -234,20 +324,11 @@ title link{
     width: 120px;
     height: 145px;
 }
-.nm-prod{
-    color: black;
-}
 .nm-prod, .nm-wr, .zona{
     text-align: center;
     margin-bottom: 2px;
-    font-size: 15px;
     font-weight: 500;
 }
-.price{
-    color: red;
-    font-size: 20px;
-}
-
 .zona{
     color: green;
 }
@@ -272,13 +353,17 @@ title link{
 .text{
     margin-top: 5px;
 }
-
+h6 p{
+    text-align: justify;
+}
 /* Footer */
 ul{
     list-style-type: none;
     padding-left: 1px;
 }
 .page-footer{
+    margin-top: 100px;
+    width: 100%;
     background: white;
     border-top: 2px solid black;
 }
@@ -303,71 +388,31 @@ ul{
     margin-left: 50px;
 }
 .nav-lg{
-    padding-left: 166px;
-    margin-bottom: 15px;
+    padding-left: 30px;
+    margin-top: 10px;
 }
-.wa{
+.wa-text{
     color: white;
     background: #26d367;
     border-radius: 10px;
-    padding: 5px;
-    width: 100px;
-    height: 25px;
-    font-size: 10px;
-    margin-left: 10px;
+    padding: 4px;
+    width: 128px;
+    height: 30px;
+    font-size: 12px;
+    margin-left: 0px;
 }
-.wa:hover{
+.wa-text:hover{
     text-decoration: none;
     color: white;
 }
 .con-text{
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
-.text-h5{
-    padding-left: 5px;
-}
-.tab{
-    padding-top: 0px;
-    margin-top: 10px;
-    background: white !important;
+.wa-logo{
+    width: 14px; 
+    height: 14px;
 }
 
-.text-rekomendasi{
-    font-weight: 500;
-}
-
-/* Iphone 5 */
-@media (min-width: 320px){
-    .col-lg{
-        margin: 5px 10px;
-        width: 140px;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    }
-    .nm-prod{
-        font-size: 15px;
-    }
-    .price{
-        font-size: 18px;
-    }
-    .img{
-        margin: -3px;
-        padding: 5px;
-        width: 120px;
-        height: 145px;
-}
-
-@media (min-width: 1024px){
-    .footer-copyright{
-        margin-top: 70px;
-    }
-    .nav-lg{
-        margin-top:5px;
-        
-    }
-    .con-text{
-        margin-bottom: 30px;
-    }
-}
 /* DEKSTOP VERSION */
 
 @media (min-width: 992px){
@@ -438,19 +483,30 @@ ul{
         padding-left: 11px;
     }
     .tab-rekomendasi{
-        padding-top: 10px;
         background-color: rgb(112, 124, 54);
         box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
         font-size: 24px;
         color: rgb(255, 255, 255);
         text-align: left;
         padding-bottom: 20px;
-        padding: 10px 0 10px 20%;
         margin-top: unset;
+    }
+    .tab-rekomendasi p{
+        padding: 5px 10px;
+        margin: 10px auto;
     }
     
 /* Content */
-
+.tab{
+    min-width: 992px;
+}
+.addres{
+    background-color: rgb(112, 124, 54);
+    box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
     .row .justify-content-center{
         display: inline-flex;
         margin-right: 10px;
@@ -461,6 +517,7 @@ ul{
     .col-lg{
         margin: 15px;
         width: 250px;
+        height: 330px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2)
     }
     .img{
@@ -471,8 +528,6 @@ ul{
     }
     .img:hover{
         margin-top: 0px;
-        /* height: 230px;
-        width: 190px; */
         margin-bottom: 10px;
     }
     .nm-prod{
@@ -482,12 +537,10 @@ ul{
     .nm-prod, .price{
         text-align:center; 
         margin-bottom: 2px;
-        font-size: 15px;
         font-weight: 500;
     }
 
     .price{
-        color: red;
         font-size: 20px;
         margin-bottom: 10px;
     }
@@ -631,5 +684,113 @@ ul{
 }
 
 /*------------------------------Akhir-list Member--------------------- */
+/* Member Row Dekstop */
+.member-row{
+    display: inline block;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) !important;
+    margin-top: 10px;
+}
+/* Akhir Member Row Dekstop */
 
+/* Footer Dekstop */
+.footer{
+    height: 200px;
+}
+.footer-text{
+    padding-left: 80%;
+    text-align-last: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.sosmed{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color:#394201;
+}
+.sosmed > div {
+    color: white;
+    font-family: 'Ubuntu Light';
+}
+
+.footer-text{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.sosmed .container-footer {
+    position: relative;
+    min-width: 992px;
+    margin: 0 auto;
+}
+
+.sosmed-logo{
+    list-style: none;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 45px;
+    width: 45px;
+    height: 45px;
+    top: -2px;
+}
+
+.fb-right {
+    margin-top: 46px;
+    margin-left: 60px;
+    height: 42px;
+    width: 42px;
+}
+
+.sosmed ul {
+    margin-right: 300px;
+    position: relative;
+    float: right;
+    display: inline-block;
+}
+.sosmed ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sosmed ul li h3 {
+    padding-left: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 205px;
+}
+.wa{
+    height: 40px;
+    width: 190px;
+    margin: 10px 153px;
+}
+.wa-text{
+    font-size: 20px;
+    color: white;
+}
+.wa-text:hover{
+    text-decoration: none;
+    color: white;
+}
+.wa-logo{
+    margin-top: -4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 22px; 
+    height: 22px;
+}
+.h5, h5{
+    font-size: 20px;
+    text-align: center;
+}
+.page-footer{
+    margin-top: 150px;
+    width: 100%;
+    background: white;
+    border-top: 2px solid black;
+}
 }
