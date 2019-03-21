@@ -20,7 +20,17 @@ height: 10px;
 .navbar{
 position:relative;
 z-index: 1;
+}
 
+#cari{
+    width: 50px;
+    font-size: 12px;
+    margin-top: 18px;
+    padding: 3px;
+    border-radius: 19px;
+    border: 0px;
+    color: white;
+    background: #088f0d;
 }
 
 .navbar-brand{
@@ -58,7 +68,7 @@ color: green;
 
 .search{
 width: 200px;
-border-radius: 10px;
+border-radius: 19px;
 font-size: 12px;
 margin-top: 18px;
 padding: 3px;
@@ -66,7 +76,13 @@ padding: 3px;
 
 
 /* Content mobile*/
+.row{
+    margin-right: unset !important;
+    margin-left: unset !important;
+    
+}
 a{
+    margin: 0 2px;
 color: black;
 }
 a:hover{
@@ -127,6 +143,8 @@ font-size: 18px;
 text-align: center;
 }
 .display-desc{
+    text-align: center;
+    border-radius: 10px;
 font-size: 22px;
 width: 430px;
 font-weight: 200;
@@ -179,6 +197,7 @@ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 position: absolute;
 bottom: 0;
 }
+
 /* Tab Rekomendasi mobile*/
 .text-rekomendasi{
 text-align: center;
@@ -231,10 +250,10 @@ text-align: justify;
 .img-space{
     width: 300px;
 }
-.img-medium{
+.img-space .img-medium{
     margin: 5px 65px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 /* 
     margin: 10px auto;
@@ -347,7 +366,17 @@ height: 14px;
 .jumbotron .display-5{
     font-size: 32px;
 }
-
+#cari{
+    height: 60px;
+    width: 100px;
+    font-size: 22px;
+    margin-top: 18px;
+    padding: 3px;
+    border-radius: 19px;
+    border: 0px;
+    color: white;
+    background: #088f0d;
+}
 .cari{
     background: green;
     color: white;
@@ -394,8 +423,7 @@ text h6{
 
 /* Akhir Keunggulan */
 .container{
-    padding-right: 30px;
-    padding-left: 11px;
+max-width: 920px;
 }
 .tab-rekomendasi{
     padding-top: 10px;
@@ -536,7 +564,6 @@ p{
 .sosmed ul {
     margin-right: 300px;
     position: relative;
-    float: right;
     display: inline-block;
 }
 .sosmed ul li {
@@ -577,4 +604,6 @@ ul{
 .h5, h5{
     font-size: 20px;
     text-align: center;
+}
+
 }
