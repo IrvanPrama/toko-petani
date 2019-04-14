@@ -55,31 +55,31 @@ if (isset($_POST["submit"])) {
         <ul>
             <li>
                 <label for="NRP">NRP:</label>
-                <input type="text" name="NRP" id="NRP" required value="<?= $commodity["NRP"]; ?>">
+                <input type="text" name="nrp" id="nrp" required value="<?= $commodity["nrp"]; ?>">
             </li>
             <li>
                 <label for="Nama">Nama:</label>
-                <input type="text" name="Nama" id="Nama" required value="<?= $commodity["Nama"]; ?>">
+                <input type="text" name="nama" id="nama" required value="<?= $commodity["nama"]; ?>">
             </li>
             <li>
                 <label for="Harga">Harga:</label>
-                <input type="text" name="Harga" id="Harga" required value="<?= $commodity["Harga"]; ?>">
+                <input type="text" name="harga" id="harga" required value="<?= $commodity["harga"]; ?>">
             </li>
             <li>
                 <label for="Pemilik">Pemilik:</label>
-                <input type="text" name="Pemilik" id="Pemilik" required value="<?= $commodity["Pemilik"]; ?>">
+                <input type="text" name="pemilik" id="pemilik" required value="<?= $commodity["pemilik"]; ?>">
             </li>
             <li>
                 <label for="Alamat">Alamat:</label>
-                <input type="text" name="Alamat" id="Alamat" required value="<?= $commodity["Alamat"]; ?>">
+                <input type="text" name="alamat" id="alamat" required value="<?= $commodity["alamat"]; ?>">
             </li>
             <li>
                 <label for="Gambar">Gambar:</label>
-                <input type="text" name="Gambar" id="Gambar" required value="<?= $commodity["Gambar"]; ?>">
+                <input type="text" name="gambar" id="gambar" required value="<?= $commodity["gambar"]; ?>">
             </li>
             <button type="submit" name="submit">Ubah</button>
         </ul>
     </form>
 </body>
 
-</html> 
+</html>

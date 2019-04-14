@@ -2,12 +2,14 @@
 
 require 'php/functions.php';
 
-// ambil tabel dari tabel
+// ambil tabel dari tabel mahasiswa / query data mahasiswa
 $commodities = query("SELECT * FROM komoditas");
+// tombol cari ditekan
+if (isset($_POST["cari"])) {
+    $commodities = cari($_POST["keyword"]);
+}
 ?>
-
-
-<!Doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -16,20 +18,21 @@ $commodities = query("SELECT * FROM komoditas");
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <title>Toko Petani - Beranda</title>
+    <title>Toko Petani - Daftar Komoditas</title>
     <link href="image/Favicon.ico" rel="shortcut icon">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-color">
         <div class="container">
             <a class="navbar-brand" href="index.php">Tokopetani</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +44,7 @@ $commodities = query("SELECT * FROM komoditas");
                         <a class="nav-link" href="index.php">Beranda <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="comodity-lists.php">List</a>
+                        <a class="nav-link" href="#">List</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tentang.html">Tentang</a>
@@ -56,67 +59,18 @@ $commodities = query("SELECT * FROM komoditas");
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Mau Beli Beras Berkualitas?</h1>
-            <h2 class="display-5">Pilih lokasi anda, kami akan mencarikan beras terdekat untuk anda</h2>
-            <button type="button" class="btn btn-primary tombol" data-toggle="modal" data-target=".bd-example-modal-lg">Cari Beras Terdekat</button>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Mau cari beras dari siapa?</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <a href="list-petani.php">
-                        <div>
-                            <h5 class="con-text">Anda ingin mencari dari petani terdekat?</h5>
-                            <div class="modal-button">
-                                <button href="member.php" type="button" class="btn btn-primary tombol modal-button">Cari di Petani</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="member.php">
-                        <div>
-                            <h5 class="con-text">Anda ingin mencari dari pedagang terdekat?</h5>
-                            <div class="modal-button">
-                                <button href="member.php" type="button" class="btn btn-primary tombol modal-button">Cari
-                                    di
-                                    Pedagang</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary tombol" data-dismiss="modal">Kembali</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tab Rekomendasi -->
+    <!-- Info Panel -->
     <div class="tab-rekomendasi">
-        <p class="text-rekomendasi">Rekomendasi beras untuk anda</p>
+        <p class="container-special">Daftar beras dari orang yang mungkin anda kenal</p>
     </div>
-    <!-- Container -->
-
-
-
+    <!-- end Info Panel -->
     <!-- Content List Barang-->
     <div class="bg-white shadow margin-distance">
         <div class="container container-special">
             <div class="list row">
                 <?php foreach ($commodities as $row) : ?>
                     <div class="list col-xl-3 col-md-4 col-6 text-center">
-                        <a href="https://api.whatsapp.com/send?phone=6288236041567&text=Hay, saya ingin membeli beras dari warung <?= $row["pemilik"]; ?>, brand <?= $row["nama"]; ?>, sebanyak <?= $row["berat"]; ?>">
+                        <a href="https://api.whatsapp.com/send?phone=6288236041567&text=Hay,%20saya%20ingin%20membeli%20beras%20dari%20warung%20<?= $row["pemilik"]; ?>, brand <?= $row["nama"]; ?>, sebanyak <?= $row["berat"];  ?>">
                             <div class="proudct__card">
                                 <div class="proudct__card__img">
                                     <img class="img" src="php/img/<?= $row["gambar"]; ?>" alt="">
@@ -124,11 +78,8 @@ $commodities = query("SELECT * FROM komoditas");
                                 <div class="proudct__card__name">
                                     <?= $row["nama"]; ?>
                                 </div>
-                                <div class="proudct__card__pemilik">
-                                    <?= $row["pemilik"]; ?>
-                                </div>
                                 <div class="product__card__price">
-                                    <?= $row["harga"]; ?> / <?= $row["berat"]; ?>
+                                    <?= $row["harga"]; ?>/<?= $row["berat"]; ?>
                                 </div>
                             </div>
                         </a>
@@ -138,50 +89,9 @@ $commodities = query("SELECT * FROM komoditas");
         </div>
     </div>
     <!-- Akhir Content List  -->
-
-    <!-- Cara Kerja -->
-    <div class="bg-white full-width margin-distance">
-        <div class="container text-center">
-            <h4>Bagaimana Kami Bekerja?</h4>
-            <p><span>"</span>Kami menghubungkan penjual beras dengan konsumen secara langsung, memastikan harga yang
-                diterima pembeli
-                sama dengan yang diberikan oleh petani.<span>"</span></p>
-            <br>
-            <div class="col-sm">
-                <div class="img-space">
-                    <img class="img-medium" src="image/keranjang.png" alt="keranjang">
-                </div>
-                <h6 class="text">Kemudahan Berbelanja</h6>
-                <p>Toko Petani memberikan kemudahan bagi konsumen untuk membeli beras dengan proses yang mudah</p>
-            </div>
-            <div class="col-sm">
-                <div class="img-space">
-                    <img class="img-medium" src="image/truk.png" alt="keranjang">
-                </div>
-                <h6 class="text">Layanan Antar</h6>
-                <p>Toko Petani membantu menyediakan fasilitas distribusi untuk produk yang dijual petani ke konsumen</p>
-            </div>
-            <div class="col-sm">
-                <div class="img-space">
-                    <img class="img-medium" src="image/money.png" alt="keranjang">
-                </div>
-                <h6 class="text">Jaminan Harga</h6>
-                <p>Toko Petani menjamin kesesuaian harga yang diberikan oleh petani dengan harga yang didapat oleh
-                    konsumen</p>
-            </div>
-            <div class="col-sm text">
-                <div class="img-space">
-                    <img class="img-medium" src="image/petani.png" alt="keranjang">
-                </div>
-                <h6 class="text">Membeli Berarti Menyelamatkan</h6>
-                <p>Dengan membeli beras di Platform Toko Petani secara langsung anda telah <span>mendukung keberlangsungan
-                        petani</span> dan <span>mencegah alih fungsi lahan pertanian</span></p>
-            </div>
-        </div>
-    </div>
-    <!-- AKhir Keunggulan -->
-
     <!-- Akhir Container -->
+
+    <!-- Footer -->
     <footer class="page-footer footer">
         <div class="bg-white full-width margin-distance">
             <div class="footer-center text-center d-flex">
@@ -238,19 +148,9 @@ $commodities = query("SELECT * FROM komoditas");
     </footer>
     <!-- Akhir Footer -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script>
-        $('#myModal').on('shown.bs.modal', function() {
-            $('#myInput').trigger('focus')
-        })
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

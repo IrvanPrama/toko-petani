@@ -1,40 +1,47 @@
-@font-face{
-    font-family:'Axettac Demo', 'Viga', sans-serif;
+@font-face {
+    font-family: 'Axettac Demo', 'Viga', sans-serif;
     src: url('../font/Axettac\ Demo.ttf');
     src: url('../font/Viga-Regular.ttf');
 }
-.hum-img{
+
+.hum-img {
     margin-top: -3px;
     width: 20px;
-    height:20px;
+    height: 20px;
 }
+
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
     border-color: white;
 }
-title link{
+
+title link {
     width: 10px;
     height: 10px;
 }
+
 /* Navbar */
-.navbar{
-    position:relative;
+.navbar {
+    position: relative;
     z-index: 1;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Axettac Demo', sans-serif;
     font-size: 22px;
 }
-.navbar-brand, .nav-link{
+
+.navbar-brand,
+.nav-link {
     color: white !important;
 }
-.navbar-light{
+
+.navbar-light {
     background: #394201 !important;
 }
 
 /*---------------Tentang mobile ver------------------------------------- */
-.tombol-tentang{
+.tombol-tentang {
     width: 60% !important;
     height: 60px !important;
     color: green !important;
@@ -42,176 +49,202 @@ title link{
     border-radius: 8px;
     border: 2px solid green;
 }
-.tombol-tentang:hover{
+
+.tombol-tentang:hover {
     color: white !important;
     background: green !important;
     border-radius: 8px;
     border: 2px solid green;
 }
 
-.button-center{
+.button-center {
     padding-top: 1px;
     border-radius: 6px !important;
     width: 300px;
     height: 40px;
 }
 
-.title{
+.title {
     margin-top: 20px;
     font-size: 22px;
     font-weight: 500;
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
 
-.title-2{
+.title-2 {
     font-size: 15px;
     font-weight: 400;
 }
 
-.text-white{
+.text-white {
     color: white;
 }
-.text-align-justify{
+
+.text-align-justify {
     text-align: justify !important;
 }
 
-.justify-content-center{
+.justify-content-center {
     text-align: center;
     box-align: center;
 }
-.border-bottom{
+
+.border-bottom {
     border-bottom: 2px solid #394201 !important;
 }
+
 /*--------------- AKHIR TENTANG - MOBILE --------------- */
 
 /*--------------- MITRA PROFILE - MOBILE VER -----------------*/
 
-.nm{
+.nm {
     font-family: sans-serif;
     font-size: 18px;
     margin: 10px 0 0 10px;
 }
 
-.nm-2{
+.nm-2 {
     font-family: sans-serif;
     font-size: 15px;
     margin: 0 0 2px 10px;
 }
-.nm-3{
+
+.nm-3 {
     font-family: sans-serif;
     font-size: 10px;
     margin: 0 0 2px 10px;
 }
-.morethan{
+
+.morethan {
     margin: 25px 20px;
     width: 15px;
-    height: 30px; 
+    height: 30px;
 }
-.member-row{
+
+.member-row {
     margin: 2px;
     height: 80px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2) !important;
     margin-top: 10px;
 }
-.img-profil-box{
+
+.img-profil-box {
     width: 20%;
 }
-.profil{
+
+.profil {
     margin: 5px;
     width: 60px;
     height: 60px;
 }
-.description{
+
+.description {
     width: 60%;
 }
-.show{
+
+.show {
     width: 20%;
 }
+
 /*---------------- AKHIR MITRA - MOBILE VER ------------------*/
 
 /* Info Panel */
-    .tab{
-        margin-top: 10px;
-    }
+.tab {
+    margin-top: 10px;
+}
+
 /* Akhir Info Pznel */
 /* Content mobile ver*/
-a{
+a {
     color: black;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: black;
 }
-.col-lg{
+
+.col-lg {
     border-radius: 8px;
 }
-.nm-prod{
+
+.nm-prod {
     margin-top: -5px;
     font-weight: 500;
     height: 45px;
 }
-.nm-prod, .price{
-    text-align:center; 
+
+.nm-prod,
+.price {
+    text-align: center;
     margin-bottom: 2px;
     font-size: 18px;
     color: black;
 }
-    
-.price{
+
+.price {
     font-weight: 200;
     margin-bottom: 10px;
     font-size: 20px;
 }
-    
-.col-lg{
+
+.col-lg {
     margin: 5px 15px;
     width: 150px;
     height: 240px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-.img{
+
+.img {
     margin: 5px;
     padding: 10px;
     width: 120px;
     height: 145px;
 }
-    
-.nm-wr, .zona{
+
+.nm-wr,
+.zona {
     text-align: center;
     margin-bottom: 2px;
     font-size: 15px;
     font-weight: 500;
 }
-    
-.zona{
+
+.zona {
     color: green;
 }
-text{
+
+text {
     font-size: 20px;
 }
-p{
+
+p {
     font-size: 18px;
 }
-.desc{
+
+.desc {
     text-align: center;
 }
-.display-desc{
+
+.display-desc {
     font-size: 22px;
     width: 430px;
     font-weight: 200;
     padding: 10px;
 }
-    
-.display-desc .span{
+
+.display-desc .span {
     font-weight: 500;
 }
-.text p{
+
+.text p {
     text-align: justify;
-    }
+}
+
 /* Akhir Content mobile ver */
 /* Tab Rekomendasi */
-.tab-rekomendasi{
+.tab-rekomendasi {
     padding-top: 10px;
     background-color: rgb(112, 124, 54);
     box-shadow: rgba(0, 0, 0, 0.2) 2.5px 2.5px 5px;
@@ -221,18 +254,20 @@ p{
     padding-bottom: 1px;
     margin-top: unset;
 }
-.tombol{
+
+.tombol {
     background: green;
     border-radius: 40px;
     border: green;
 }
-.tombol:hover{
+
+.tombol:hover {
     background-color: white;
     border: 0.1px solid green;
     color: green;
 }
 
-.search{
+.search {
     width: 200px;
     border-radius: 10px;
     font-size: 12px;
@@ -242,10 +277,11 @@ p{
 
 
 /* Isi Konten */
-.tab{
+.tab {
     min-width: 320px;
 }
-.addres{
+
+.addres {
     background-color: rgb(112, 124, 54);
     box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
     font-size: 12px;
@@ -254,24 +290,27 @@ p{
     height: 38px;
     padding: 5px;
 }
-.col-lg{
+
+.col-lg {
     border-radius: 8px;
 }
 
 /* Desc */
-.display-desc{
+.display-desc {
     font-size: 20px;
 
 }
 
-.display-desc{
+.display-desc {
     font-weight: 200;
 }
-.display-desc .span{
+
+.display-desc .span {
     font-weight: 500;
 }
+
 /* Jumbotron */
-.jumbotron{
+.jumbotron {
     background-image: url(../image/gambarbanner.png);
     background-size: cover;
     height: 340px;
@@ -280,13 +319,13 @@ p{
     margin-bottom: 0px;
 }
 
-.jumbotron .container{
+.jumbotron .container {
     z-index: 1;
     position: relative;
 }
 
 
-.jumbotron .display-4{
+.jumbotron .display-4 {
     margin-right: 10px;
     color: white;
     margin-top: 90px;
@@ -295,13 +334,14 @@ p{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-.jumbotron .display-5{
+.jumbotron .display-5 {
     color: white;
     font-weight: 300;
     font-size: 15px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
-.jumbotron::after{
+
+.jumbotron::after {
     content: '';
     display: block;
     width: 100%;
@@ -312,28 +352,33 @@ p{
 }
 
 /* Content */
-.col-lg{
+.col-lg {
     margin: 5px 15px;
     width: 160px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
-.img{
+
+.img {
     margin: 5px;
     padding: 10px;
     width: 120px;
     height: 145px;
 }
-.nm-prod, .nm-wr, .zona{
+
+.nm-prod,
+.nm-wr,
+.zona {
     text-align: center;
     margin-bottom: 2px;
     font-weight: 500;
 }
-.zona{
+
+.zona {
     color: green;
 }
 
 /* Deskripsi */
-.display-desc{
+.display-desc {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     font-size: 12px;
     padding-top: 10px;
@@ -342,31 +387,37 @@ p{
     margin-bottom: 10px;
     min-height: 100px;
 }
-.kiri{
+
+.kiri {
     margin-left: 1px;
     margin-right: 0px;
 }
-.kanan{
+
+.kanan {
     margin-right: 0px
 }
-.text{
+
+.text {
     margin-top: 5px;
 }
-h6 p{
+
+h6 p {
     text-align: justify;
 }
+
 /* Footer */
-ul{
+ul {
     list-style-type: none;
     padding-left: 1px;
 }
-.page-footer{
-    margin-top: 100px;
+
+.page-footer {
     width: 100%;
     background: white;
     border-top: 2px solid black;
 }
-.footer-copyright{
+
+.footer-copyright {
     padding-top: 15px;
     bottom: 0;
     height: 50px;
@@ -374,23 +425,30 @@ ul{
     color: white;
     background-color: #394201;
 }
-.h5, h5{
-    font-size: 15px;;
+
+.h5,
+h5 {
+    font-size: 15px;
+    ;
 }
-.sosmed-logo{
+
+.sosmed-logo {
     width: 30px;
     height: 30px;
     margin-left: 5px;
 }
-.fb-right{
+
+.fb-right {
     margin-top: -59px;
     margin-left: 50px;
 }
-.nav-lg{
+
+.nav-lg {
     padding-left: 30px;
     margin-top: 10px;
 }
-.wa-text{
+
+.-text {
     color: white;
     background: #26d367;
     border-radius: 10px;
@@ -400,64 +458,78 @@ ul{
     font-size: 12px;
     margin-left: 0px;
 }
-.wa-text:hover{
+
+.wa-text:hover {
     text-decoration: none;
     color: white;
 }
-.con-text{
+
+.con-text {
     margin-bottom: 2px;
+    text-align: center;
 }
-.wa-logo{
-    width: 14px; 
+
+.wa-logo {
+    width: 14px;
     height: 14px;
 }
 
 /* DEKSTOP VERSION */
 
-@media (min-width: 992px){
-    .navbar-brand{
+@media (min-width: 992px) {
+    .navbar-brand {
         font-size: 52px;
     }
-    .navbar-brand, .nav-link{
+
+    .navbar-brand,
+    .nav-link {
         margin-top: 1px;
         color: white !important;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 22px;
         text-transform: uppercase;
         margin-right: 30px;
     }
-    .tombol{
+
+    .tombol {
         padding-top: 7px;
         font-size: 20px;
         text-transform: uppercase;
     }
-    .nav-link:hover::after{
+
+    .nav-link:hover::after {
         content: '';
         display: block;
-        border-bottom: 3px solid #088f0d; 
+        border-bottom: 3px solid #088f0d;
         width: 50%;
-        margin: auto; 
+        margin: auto;
         padding-bottom: 5px;
         margin-bottom: -8px;
     }
-    .jumbotron{
+
+    .jumbotron {
         margin-top: -110px;
         height: 640px;
     }
-    .jumbotron .display-4, .jumbotron .display-5{
+
+    .jumbotron .display-4,
+    .jumbotron .display-5 {
         margin-top: 20px;
     }
-    .jumbotron .display-4{
+
+    .jumbotron .display-4 {
         margin-top: 160px;
         font-size: 46px;
     }
-    .jumbotron .display-5{
+
+    .jumbotron .display-5 {
         font-size: 32px;
     }
 
-    .cari{
+    .cari {
         background: green;
         color: white;
         border: 2px solid green;
@@ -466,22 +538,26 @@ ul{
         padding: 7px 20px 10px 20px;
         font-size: 21px;
     }
-    .cari:hover{
+
+    .cari:hover {
         background: green;
         border: 2px solid white;
         color: white;
         text-decoration: unset;
     }
-    .search{
+
+    .search {
         font-size: 22px;
         width: 600px;
         padding: 12px;
     }
-    .container{
+
+    .container {
         padding-right: 30px;
         padding-left: 11px;
     }
-    .tab-rekomendasi{
+
+    .tab-rekomendasi {
         background-color: rgb(112, 124, 54);
         box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
         font-size: 24px;
@@ -490,307 +566,318 @@ ul{
         padding-bottom: 20px;
         margin-top: unset;
     }
-    .tab-rekomendasi p{
+
+    .tab-rekomendasi p {
         padding: 5px 10px;
         margin: 10px auto;
     }
-    
-/* Content */
-.tab{
-    min-width: 992px;
-}
-.addres{
-    background-color: rgb(112, 124, 54);
-    box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-    .row .justify-content-center{
+
+    /* Content */
+    .tab {
+        min-width: 992px;
+    }
+
+    .addres {
+        background-color: rgb(112, 124, 54);
+        box-shadow: rgba(0, 0, 0, 0.5) 2.5px 2.5px 5px;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .row .justify-content-center {
         display: inline-flex;
         margin-right: 10px;
     }
-    .row{
+
+    .row {
         margin: 5px;
     }
-    .col-lg{
+
+    .col-lg {
         margin: 15px;
         width: 250px;
         height: 330px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2)
     }
-    .img{
+
+    .img {
         margin: 5px 20px 5px 22px;
         padding: 10px;
         width: 180px;
         height: 220px;
     }
-    .img:hover{
+
+    .img:hover {
         margin-top: 0px;
         margin-bottom: 10px;
     }
-    .nm-prod{
+
+    .nm-prod {
         margin-top: -5px;
     }
 
-    .nm-prod, .price{
-        text-align:center; 
+    .nm-prod,
+    .price {
+        text-align: center;
         margin-bottom: 2px;
         font-weight: 500;
     }
 
-    .price{
+    .price {
         font-size: 20px;
         margin-bottom: 10px;
     }
-    
-    .zona{
+
+    .zona {
         color: green;
     }
-    
-/* Deskripsi */
-    .display-desc{
+
+    /* Deskripsi */
+    .display-desc {
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         font-size: 22px;
         text-align: center;
         width: 1055px;
     }
-    .text{
+
+    .text {
         font-size: 22px;
     }
-    .kiri{
+
+    .kiri {
         margin-left: 5px;
         margin-right: 0px;
     }
-    .kanan{
+
+    .kanan {
         margin-right: 0px
     }
-    .text{
+
+    .text {
         margin-top: 5px;
     }
 
-/* Footer */
-#footer{
-    position: relative;
-    padding-top: 5px;
-    margin-top: 60px;
-    background-color: #707c36;
-    float: right; 
-    width: 100%;
-}
-
-.footer-text{
-    padding-left: 80%;
-    text-align-last: center;
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.sosmed{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    background-color:#394201;
-}
-.sosmed > div {
-    color: white;
-    font-family: 'Ubuntu Light';
-}
-
-.footer-text{
-    color: #ffffff;
-    font-size: 15px;
-}
-
-.sosmed .container-footer {
-    position: relative;
-    min-width: 992px;
-    margin: 0 auto;
-}
-
-.sosmed-logo{
-    list-style: none;
-    position: absolute;
-    margin-left: -15px;
-    margin-top: 45px;
-    width: 45px;
-    height: 45px;
-    top: -2px;
-  }
-
-.fb-right {
-    margin-top: 46px;
-    margin-left: 60px;
-    height: 42px;
-    width: 42px;
-  }
-
-.sosmed ul {
-    margin-right: 300px;
-    position: relative;
-    /* float: right; */
-    display: inline-block;
-}
-.sosmed ul li {
-     display: inline-block;
-     list-style: none;
-     margin-left: 10px;
-     margin-right: 10px;
-}
-
-.sosmed ul li h3 {
-     padding-left: 0;
- }
- .wa{
-     font-size: 22px;
-     margin-left: 0px;
- }
-
-/* --------------------------About ver dekstop------------------------------ */
-.title{
-    margin: 20px auto;
-    margin-bottom: -2px;
-    font-size: 32px;
-    width: 100%;
-}
-.title-2{
-    font-size: 22px;
-}
-
-.font-size-medium{
-    font-size: 22px;
-}
-/* --------------------------akhir about-------------------------------- */
-
-/*-------------------------List-Member---------------------------- */
-
-
-.morethan{
-    margin: 33px 51px;
-    width: 15px;
-    height: 30px;
-}
-.member-row{
-    margin: 10px auto;
-    width: 60%;
-    height: 100px;
-}
-.profil{
-    height: 85px;
-    width: 85px;
-    margin: 7px 28px;
-}
-
-/*------------------------------Akhir-list Member--------------------- */
-/* Member Row Dekstop */
-.member-row{
-    display: inline block;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) !important;
-}
-/* Akhir Member Row Dekstop */
-
-/* Footer Dekstop */
-.footer{
-    height: 200px;
-}
-.footer-text{
-    padding-left: 80%;
-    text-align-last: center;
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.sosmed{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    background-color:#394201;
-}
-.sosmed > div {
-    color: white;
-    font-family: 'Ubuntu Light';
-}
-
-.footer-text{
-    color: #ffffff;
-    font-size: 15px;
-}
-
-.sosmed .container-footer {
-    position: relative;
-    min-width: 992px;
-    margin: 0 auto;
-}
-
-.sosmed-logo{
-    list-style: none;
-    position: absolute;
-    margin-left: -15px;
-    margin-top: 45px;
-    width: 45px;
-    height: 45px;
-    top: -2px;
-}
-
-.fb-right {
-    margin-top: 46px;
-    margin-left: 60px;
-    height: 42px;
-    width: 42px;
-}
-
-.sosmed ul {
-    margin-right: 300px;
-    position: relative;
-    display: inline-block;
-}
-.sosmed ul li {
-    display: inline-block;
-    list-style: none;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.sosmed ul li h3 {
-    padding-left: 0;
-}
-
-ul{
-    list-style-type: none;
-    padding-left: 205px;
-}
-.wa{
-    height: 40px;
-    width: 190px;
-    margin: 10px 153px;
-}
-.wa-text{
-    font-size: 20px;
-    color: white;
-}
-.wa-text:hover{
-    text-decoration: none;
-    color: white;
-}
-.wa-logo{
-    margin-top: -4px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 22px; 
-    height: 22px;
-}
-.h5, h5{
-    font-size: 20px;
-    text-align: center;
-}
-.page-footer{
-        top: 50vh;
+    /* Footer */
+    #footer {
         position: relative;
-        margin-top: 150px;
-        width: 100%;    
-        background: white;
-        border-top: 2px solid black;
+        padding-top: 5px;
+        margin-top: 60px;
+        background-color: #707c36;
+        float: right;
+        width: 100%;
     }
+
+    .footer-text {
+        padding-left: 80%;
+        text-align-last: center;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .sosmed {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        background-color: #394201;
+    }
+
+    .sosmed>div {
+        color: white;
+        font-family: 'Ubuntu Light';
+    }
+
+    .footer-text {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .sosmed .container-footer {
+        position: relative;
+        min-width: 992px;
+        margin: 0 auto;
+    }
+
+    .sosmed-logo {
+        list-style: none;
+        position: absolute;
+        margin-left: -15px;
+        margin-top: 45px;
+        width: 45px;
+        height: 45px;
+        top: -2px;
+    }
+
+    .fb-right {
+        margin-top: 46px;
+        margin-left: 60px;
+        height: 42px;
+        width: 42px;
+    }
+
+    .sosmed ul {
+        margin-right: 300px;
+        position: relative;
+        /* float: right; */
+        display: inline-block;
+    }
+
+    .sosmed ul li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sosmed ul li h3 {
+        padding-left: 0;
+    }
+
+    .wa {
+        font-size: 22px;
+        margin-left: 0px;
+    }
+
+    /* --------------------------About ver dekstop------------------------------ */
+    .title {
+        margin: 20px auto;
+        margin-bottom: -2px;
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .title-2 {
+        font-size: 22px;
+    }
+
+    .font-size-medium {
+        font-size: 22px;
+    }
+
+    /* --------------------------akhir about-------------------------------- */
+
+    /*-------------------------List-Member---------------------------- */
+
+
+    .morethan {
+        margin: 33px 51px;
+        width: 15px;
+        height: 30px;
+    }
+
+    .member-row {
+        margin: 10px auto;
+        width: 60%;
+        height: 100px;
+    }
+
+    .profil {
+        height: 85px;
+        width: 85px;
+        margin: 7px 28px;
+    }
+
+    /*------------------------------Akhir-list Member--------------------- */
+    /* Member Row Dekstop */
+    .member-row {
+        display: inline block;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    /* Akhir Member Row Dekstop */
+
+    /* Footer Dekstop */
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer-text {
+        padding-left: 80%;
+        text-align-last: center;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .sosmed {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        background-color: #394201;
+    }
+
+    .sosmed>div {
+        color: white;
+        font-family: 'Ubuntu Light';
+    }
+
+    .footer-text {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .sosmed .container-footer {
+        position: relative;
+        min-width: 992px;
+        margin: 0 auto;
+    }
+
+    .sosmed-logo {
+        list-style: none;
+        position: absolute;
+        margin-left: -15px;
+        margin-top: 45px;
+        width: 45px;
+        height: 45px;
+        top: -2px;
+    }
+
+    .fb-right {
+        margin-top: 46px;
+        margin-left: 60px;
+        height: 42px;
+        width: 42px;
+    }
+
+    .sosmed ul {
+        margin-right: 300px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .sosmed ul li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sosmed ul li h3 {
+        padding-left: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 205px;
+    }
+
+    .wa {
+        height: 40px;
+        width: 190px;
+        margin: 10px 130px;
+    }
+
+    .wa-text {
+        font-size: 20px;
+        color: white;
+    }
+
+    .h5,
+    h5 {
+        font-size: 20px;
+        text-align: center;
+    }
+
 
 }

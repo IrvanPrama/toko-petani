@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 
 if (!isset($_SESSION["login"])) {
@@ -43,27 +43,29 @@ if (isset($_POST["cari"])) {
             <th>Nama</th>
             <th>NRP</th>
             <th>Harga</th>
+            <th>Berat</th>
             <th>Pemilik</th>
-            <th>ALamat</th>
+            <th>Alamat</th>
         </tr>
         <?php $i = 1;  ?>
         <?php foreach ($commodities as $row) : ?>
-        <tr>
-            <td><?= $i; ?></td>
-            <td>
-                <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a> |
-                <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm ('Anda yakin ingin menghapus data ini?')">Hapus</a>
-            </td>
-            <td><img src="img/<?= $row["Gambar"]; ?>" alt="" width="50"></td>
-            <td><?= $row["Nama"]; ?></td>
-            <td><?= $row["NRP"]; ?></td>
-            <td><?= $row["Harga"]; ?></td>
-            <td><?= $row["Pemilik"]; ?></td>
-            <td><?= $row["Alamat"]; ?></td>
-        </tr>
-        <?php $i++;  ?>
+            <tr>
+                <td><?= $i; ?></td>
+                <td>
+                    <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a> |
+                    <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm ('Anda yakin ingin menghapus data ini?')">Hapus</a>
+                </td>
+                <td><img src="img/<?= $row["gambar"]; ?>" alt="" width="50"></td>
+                <td><?= $row["nama"]; ?></td>
+                <td><?= $row["nrp"]; ?></td>
+                <td><?= $row["harga"]; ?></td>
+                <td><?= $row["berat"]; ?></td>
+                <td><?= $row["pemilik"]; ?></td>
+                <td><?= $row["alamat"]; ?></td>
+            </tr>
+            <?php $i++;  ?>
         <?php endforeach; ?>
     </table>
 </body>
 
-</html> 
+</html>

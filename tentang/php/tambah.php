@@ -45,32 +45,36 @@ if (isset($_POST["submit"])) {
     <form action="" method="post" enctype="multipart/form-data">
         <ul>
             <li>
-                <label for="NRP">NRP:</label>
-                <input type="text" name="NRP" id="NRP">
+                <label for="nrp">NRP:</label>
+                <input type="text" name="nrp" id="nrp">
             </li>
             <li>
-                <label for="Nama">Nama:</label>
-                <input type="text" name="Nama" id="Nama">
+                <label for="n">Nama:</label>
+                <input type="text" name="nama" id="nama">
             </li>
             <li>
-                <label for="Harga">Harga:</label>
-                <input type="text" name="Harga" id="Harga">
+                <label for="harga">Harga:</label>
+                <input type="text" name="harga" id="harga">
             </li>
             <li>
-                <label for="Pemilik">Pemilik:</label>
-                <input type="text" name="Pemilik" id="Pemilik">
+                <label for="berat">Berat:</label>
+                <input type="text" name="berat" id="berat">
             </li>
             <li>
-                <label for="Alamat">Alamat:</label>
-                <input type="text" name="Alamat" id="Alamat">
+                <label for="pemilik">Pemilik:</label>
+                <input type="text" name="pemilik" id="pemilik">
             </li>
             <li>
-                <label for="Gambar">Gambar:</label>
-                <input type="text" name="Gambar" id="Gambar">
+                <label for="alamat">Alamat:</label>
+                <input type="text" name="alamat" id="alamat">
+            </li>
+            <li>
+                <label for="gambar">Gambar:</label>
+                <input type="file" name="gambar" id="gambar">
             </li>
             <button type="submit" name="submit">Tambah</button>
         </ul>
     </form>
 </body>
 
-</html> 
+</html>
